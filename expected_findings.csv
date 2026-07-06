@@ -1,0 +1,150 @@
+probe_id,repo,ecosystem,package,version,relation,ghsa_id,cve_id,severity,first_patched,published,summary
+N-01,poc-node-sca,npm,lodash,4.17.11,direct,GHSA-jf85-cpcp-j695,CVE-2019-10744,CRITICAL,4.17.12,2019-07-10,Prototype Pollution in lodash
+N-01,poc-node-sca,npm,lodash,4.17.11,direct,GHSA-p6mc-m468-83gw,CVE-2020-8203,HIGH,4.17.19,2020-07-15,Prototype Pollution in lodash
+N-01,poc-node-sca,npm,lodash,4.17.11,direct,GHSA-f23m-r3pf-42rh,CVE-2026-2950,MODERATE,4.18.0,2026-04-01,lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit`
+N-01,poc-node-sca,npm,lodash,4.17.11,direct,GHSA-r5fr-rjxr-66jc,CVE-2026-4800,HIGH,4.18.0,2026-04-01,lodash vulnerable to Code Injection via `_.template` imports key names
+N-01,poc-node-sca,npm,lodash,4.17.11,direct,GHSA-xxjr-mmjv-4gpg,CVE-2025-13465,MODERATE,4.17.23,2026-01-21,Lodash has Prototype Pollution Vulnerability in `_.unset` and `_.omit` functions
+N-01,poc-node-sca,npm,lodash,4.17.11,direct,GHSA-29mw-wpgm-hmr9,CVE-2020-28500,MODERATE,4.17.21,2022-01-06,Regular Expression Denial of Service (ReDoS) in lodash
+N-01,poc-node-sca,npm,lodash,4.17.11,direct,GHSA-35jh-r3h4-6jhm,CVE-2021-23337,HIGH,4.17.21,2021-05-06,Command Injection in lodash
+N-02,poc-node-sca,npm,minimist,0.0.8,transitive,GHSA-vh95-rmgr-6w4m,CVE-2020-7598,MODERATE,0.2.1,2020-04-03,Prototype Pollution in minimist
+N-02,poc-node-sca,npm,minimist,0.0.8,transitive,GHSA-xvch-5gv4-984h,CVE-2021-44906,CRITICAL,0.2.4,2022-03-18,Prototype Pollution in minimist
+N-02,poc-node-sca,npm,minimist,0.0.8,transitive,GHSA-7fhm-mqm4-2wp7,,WITHDRAWN,1.2.2,2020-03-13,WITHDRAWN: Withdrawn: ESLint dependencies are vulnerable (ReDoS and Prototype Pollution)
+N-03,poc-node-sca,npm,qs,6.7.0,transitive,GHSA-w7fw-mjwx-w883,CVE-2026-2391,LOW,6.14.2,2026-02-12,qs's arrayLimit bypass in comma parsing allows denial of service
+N-03,poc-node-sca,npm,qs,6.7.0,transitive,GHSA-6rw7-vpxm-498p,CVE-2025-15284,MODERATE,6.14.1,2025-12-30,qs's arrayLimit bypass in its bracket notation allows DoS via memory exhaustion
+N-03,poc-node-sca,npm,qs,6.7.0,transitive,GHSA-hrpp-h998-j3pp,CVE-2022-24999,HIGH,6.10.3,2022-11-27,qs vulnerable to Prototype Pollution
+N-04,poc-node-sca,npm,express,4.17.1,direct,GHSA-rv95-896h-c2vc,CVE-2024-29041,MODERATE,4.19.2,2024-03-25,Express.js Open Redirect in malformed URLs
+N-04,poc-node-sca,npm,express,4.17.1,direct,GHSA-qw6h-vgh9-j6wx,CVE-2024-43796,LOW,4.20.0,2024-09-10,express vulnerable to XSS via response.redirect()
+N-04,poc-node-sca,npm,express,4.17.1,direct,GHSA-pj86-cfqh-vqx6,CVE-2024-51999,WITHDRAWN,4.22.0,2025-12-01,WITHDRAWN: Withdrawn Advisory: express improperly controls modification of query properties
+N-05,poc-node-sca,npm,body-parser,1.19.0,transitive,GHSA-qwcr-r2fm-qrc7,CVE-2024-45590,HIGH,1.20.3,2024-09-10,body-parser vulnerable to denial of service when url encoding is enabled
+N-06,poc-node-sca,npm,cookie,0.4.0,transitive,GHSA-pxg6-pf52-xh8x,CVE-2024-47764,LOW,0.7.0,2024-10-04,"cookie accepts cookie name, path, and domain with out of bounds characters"
+N-07,poc-node-sca,npm,path-to-regexp,0.1.7,transitive,GHSA-37ch-88jc-xwx2,CVE-2026-4867,HIGH,0.1.13,2026-03-27,path-to-regexp vulnerable to Regular Expression Denial of Service via multiple route param
+N-07,poc-node-sca,npm,path-to-regexp,0.1.7,transitive,GHSA-9wv6-86v2-598j,CVE-2024-45296,HIGH,0.1.10,2024-09-09,path-to-regexp outputs backtracking regular expressions
+N-07,poc-node-sca,npm,path-to-regexp,0.1.7,transitive,GHSA-rhx6-c78j-4q9w,CVE-2024-52798,HIGH,0.1.12,2024-12-05,path-to-regexp contains a ReDoS
+N-08,poc-node-sca,npm,send,0.17.1,transitive,GHSA-m6fv-jmcg-4jfg,CVE-2024-43799,LOW,0.19.0,2024-09-10,send vulnerable to template injection that can lead to XSS
+N-09,poc-node-sca,npm,serve-static,1.14.1,transitive,GHSA-cm22-4g7w-348p,CVE-2024-43800,LOW,1.16.0,2024-09-10,serve-static vulnerable to template injection that can lead to XSS
+N-10,poc-node-sca,npm,ejs,3.1.6,direct,GHSA-ghr5-ch3p-vcr6,CVE-2024-33883,MODERATE,3.1.10,2024-04-28,ejs lacks certain pollution protection
+N-10,poc-node-sca,npm,ejs,3.1.6,direct,GHSA-phwq-j96m-2c2q,CVE-2022-29078,CRITICAL,3.1.7,2022-04-26,ejs template injection vulnerability
+N-11,poc-node-sca,npm,handlebars,4.7.6,direct,GHSA-2qvq-rjwj-gvw9,CVE-2026-33916,MODERATE,4.7.9,2026-03-26,Handlebars.js has Prototype Pollution Leading to XSS through Partial Template Injection
+N-11,poc-node-sca,npm,handlebars,4.7.6,direct,GHSA-9cx6-37pm-9jff,CVE-2026-33939,HIGH,4.7.9,2026-03-27,Handlebars.js has Denial of Service via Malformed Decorator Syntax in Template Compilation
+N-11,poc-node-sca,npm,handlebars,4.7.6,direct,GHSA-7rx3-28cr-v5wh,,MODERATE,4.7.9,2026-03-29,Handlebars.js has a Prototype Method Access Control Gap via Missing __lookupSetter__ Block
+N-11,poc-node-sca,npm,handlebars,4.7.6,direct,GHSA-xjpj-3mr7-gcpf,CVE-2026-33941,HIGH,4.7.9,2026-03-27,Handlebars.js has JavaScript Injection in CLI Precompiler via Unescaped Names and Options
+N-11,poc-node-sca,npm,handlebars,4.7.6,direct,GHSA-2w6w-674q-4c4q,CVE-2026-33937,CRITICAL,4.7.9,2026-03-27,Handlebars.js has JavaScript Injection via AST Type Confusion
+N-11,poc-node-sca,npm,handlebars,4.7.6,direct,GHSA-3mfm-83xf-c92r,CVE-2026-33938,HIGH,4.7.9,2026-03-27,Handlebars.js has JavaScript Injection via AST Type Confusion by tampering @partial-block
+N-11,poc-node-sca,npm,handlebars,4.7.6,direct,GHSA-442j-39wm-28r2,,LOW,4.7.9,2026-03-29,Handlebars.js has a Property Access Validation Bypass in container.lookup
+N-11,poc-node-sca,npm,handlebars,4.7.6,direct,GHSA-xhpv-hc6g-r9c6,CVE-2026-33940,HIGH,4.7.9,2026-03-27,Handlebars.js has JavaScript Injection via AST Type Confusion when passing an object as dy
+N-11,poc-node-sca,npm,handlebars,4.7.6,direct,GHSA-765h-qjxv-5f44,CVE-2021-23383,CRITICAL,4.7.7,2022-02-10,Prototype Pollution in handlebars
+N-11,poc-node-sca,npm,handlebars,4.7.6,direct,GHSA-f2jv-r9rf-7988,CVE-2021-23369,CRITICAL,4.7.7,2021-05-06,Remote code execution in handlebars when compiling templates
+N-13,poc-node-sca,npm,qs,6.11.0,direct,GHSA-w7fw-mjwx-w883,CVE-2026-2391,LOW,6.14.2,2026-02-12,qs's arrayLimit bypass in comma parsing allows denial of service
+N-13,poc-node-sca,npm,qs,6.11.0,direct,GHSA-6rw7-vpxm-498p,CVE-2025-15284,MODERATE,6.14.1,2025-12-30,qs's arrayLimit bypass in its bracket notation allows DoS via memory exhaustion
+P-01,poc-python-sca,PyPI,requests,2.19.1,direct,GHSA-j8r2-6x86-q33q,CVE-2023-32681,MODERATE,2.31.0,2023-05-22,Unintended leak of Proxy-Authorization header in requests
+P-01,poc-python-sca,PyPI,requests,2.19.1,direct,GHSA-x84v-xcm2-53pg,CVE-2018-18074,HIGH,2.20.0,2018-10-29,Insufficiently Protected Credentials in Requests
+P-01,poc-python-sca,PyPI,requests,2.19.1,direct,GHSA-gc5v-m9x4-r6x2,CVE-2026-25645,MODERATE,2.33.0,2026-03-25,Requests has Insecure Temp File Reuse in its extract_zipped_paths() utility function
+P-01,poc-python-sca,PyPI,requests,2.19.1,direct,GHSA-9wx4-h78v-vm56,CVE-2024-35195,MODERATE,2.32.0,2024-05-20,Requests `Session` object does not verify requests after making first request with verify=
+P-01,poc-python-sca,PyPI,requests,2.19.1,direct,GHSA-9hjg-9r4m-mvj7,CVE-2024-47081,MODERATE,2.32.4,2025-06-09,Requests vulnerable to .netrc credentials leak via malicious URLs
+P-02,poc-python-sca,PyPI,flask,0.12.2,direct,GHSA-5wv5-4vpf-pj6m,CVE-2019-1010083,HIGH,1.0,2019-07-19,Pallets Project Flask is vulnerable to Denial of Service via Unexpected memory usage
+P-02,poc-python-sca,PyPI,flask,0.12.2,direct,GHSA-m2qf-hxjv-5gpq,CVE-2023-30861,HIGH,2.2.5,2023-05-01,Flask vulnerable to possible disclosure of permanent session cookie due to missing Vary: C
+P-02,poc-python-sca,PyPI,flask,0.12.2,direct,GHSA-562c-5r94-xh97,CVE-2018-1000656,HIGH,0.12.3,2018-08-23,Flask is vulnerable to Denial of Service via incorrect encoding of JSON data
+P-02,poc-python-sca,PyPI,flask,0.12.2,direct,GHSA-68rp-wp8r-4726,CVE-2026-27205,LOW,3.1.3,2026-02-19,Flask session does not add `Vary: Cookie` header when accessed in some ways
+P-03,poc-python-sca,PyPI,jinja2,2.10,transitive,GHSA-462w-v97r-4m45,CVE-2019-10906,HIGH,2.10.1,2019-04-10,Jinja2 sandbox escape via string formatting
+P-03,poc-python-sca,PyPI,jinja2,2.10,transitive,GHSA-h75v-3vvj-5mfj,CVE-2024-34064,MODERATE,3.1.4,2024-05-06,Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr fi
+P-03,poc-python-sca,PyPI,jinja2,2.10,transitive,GHSA-q2x7-8rv6-6q7h,CVE-2024-56326,MODERATE,3.1.5,2024-12-23,Jinja has a sandbox breakout through indirect reference to format method
+P-03,poc-python-sca,PyPI,jinja2,2.10,transitive,GHSA-h5c8-rqwp-cp95,CVE-2024-22195,MODERATE,3.1.3,2024-01-11,Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr fi
+P-03,poc-python-sca,PyPI,jinja2,2.10,transitive,GHSA-cpwx-vrp4-4pq7,CVE-2025-27516,MODERATE,3.1.6,2025-03-05,Jinja2 vulnerable to sandbox breakout through attr filter selecting format method
+P-03,poc-python-sca,PyPI,jinja2,2.10,transitive,GHSA-g3rq-g295-4j3m,CVE-2020-28493,MODERATE,2.11.3,2021-03-19,Regular Expression Denial of Service (ReDoS) in Jinja2
+P-04,poc-python-sca,PyPI,werkzeug,0.14.1,transitive,GHSA-gq9m-qvpx-68hc,CVE-2019-14806,HIGH,0.15.3,2019-08-21,Pallets Werkzeug Insufficient Entropy
+P-04,poc-python-sca,PyPI,werkzeug,0.14.1,transitive,GHSA-px8h-6qxv-m22q,CVE-2023-23934,LOW,2.2.3,2023-02-15,Incorrect parsing of nameless cookies leads to __Host- cookies bypass
+P-04,poc-python-sca,PyPI,werkzeug,0.14.1,transitive,GHSA-xg9f-g7g7-2323,CVE-2023-25577,HIGH,2.2.3,2023-02-15,High resource usage when parsing multipart form data with many fields
+P-04,poc-python-sca,PyPI,werkzeug,0.14.1,transitive,GHSA-29vq-49wr-vm6x,CVE-2026-27199,MODERATE,3.1.6,2026-02-19, Werkzeug safe_join() allows Windows special device names
+P-04,poc-python-sca,PyPI,werkzeug,0.14.1,transitive,GHSA-87hc-h4r5-73f7,CVE-2026-21860,MODERATE,3.1.5,2026-01-08, Werkzeug safe_join() allows Windows special device names with compound extensions
+P-04,poc-python-sca,PyPI,werkzeug,0.14.1,transitive,GHSA-2g68-c3qc-8985,CVE-2024-34069,HIGH,3.0.3,2024-05-06,Werkzeug debugger vulnerable to remote execution when interacting with attacker controlled
+P-04,poc-python-sca,PyPI,werkzeug,0.14.1,transitive,GHSA-f9vj-2wh5-fj8j,CVE-2024-49766,MODERATE,3.0.6,2024-10-25,Werkzeug safe_join not safe on Windows
+P-04,poc-python-sca,PyPI,werkzeug,0.14.1,transitive,GHSA-hgf8-39gv-g3f2,CVE-2025-66221,MODERATE,3.1.4,2025-12-02,Werkzeug safe_join() allows Windows special device names
+P-04,poc-python-sca,PyPI,werkzeug,0.14.1,transitive,GHSA-j544-7q9p-6xp8,CVE-2019-14322,HIGH,0.15.5,2022-05-24,Pallets Werkzeug vulnerable to Path Traversal
+P-05,poc-python-sca,PyPI,urllib3,1.23,transitive,GHSA-mh33-7rrq-662w,CVE-2019-11324,HIGH,1.24.2,2019-04-19,Improper Certificate Validation in urllib3
+P-05,poc-python-sca,PyPI,urllib3,1.23,transitive,GHSA-gwvm-45gx-3cf8,CVE-2018-25091,MODERATE,1.24.2,2023-10-15,Authorization Header forwarded on redirect
+P-05,poc-python-sca,PyPI,urllib3,1.23,transitive,GHSA-v845-jxx5-vc9f,CVE-2023-43804,HIGH,1.26.17,2023-10-02,`Cookie` HTTP header isn't stripped on cross-origin redirects
+P-05,poc-python-sca,PyPI,urllib3,1.23,transitive,GHSA-g4mx-q9vg-27p4,CVE-2023-45803,MODERATE,1.26.18,2023-10-17,urllib3's request body not stripped after redirect from 303 status changes request method 
+P-05,poc-python-sca,PyPI,urllib3,1.23,transitive,GHSA-qccp-gfcp-xxvc,CVE-2026-44431,HIGH,2.7.0,2026-05-11,urllib3: Sensitive headers forwarded across origins in proxied low-level redirects
+P-05,poc-python-sca,PyPI,urllib3,1.23,transitive,GHSA-38jv-5279-wg99,CVE-2026-21441,HIGH,2.6.3,2026-01-07,Decompression-bomb safeguards bypassed when following HTTP redirects (streaming API)
+P-05,poc-python-sca,PyPI,urllib3,1.23,transitive,GHSA-34jh-p97f-mpxf,CVE-2024-37891,MODERATE,1.26.19,2024-06-17,urllib3's Proxy-Authorization request header isn't stripped during cross-origin redirects
+P-05,poc-python-sca,PyPI,urllib3,1.23,transitive,GHSA-pq67-6m6q-mj2v,CVE-2025-50181,MODERATE,2.5.0,2025-06-18,urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation
+P-05,poc-python-sca,PyPI,urllib3,1.23,transitive,GHSA-2xpw-w6gg-jr37,CVE-2025-66471,HIGH,2.6.0,2025-12-05,urllib3 streaming API improperly handles highly compressed data
+P-05,poc-python-sca,PyPI,urllib3,1.23,transitive,GHSA-r64q-w8jr-g9qp,CVE-2019-11236,MODERATE,1.24.3,2022-05-13,Improper Neutralization of CRLF Sequences in urllib3 library for Python
+P-05,poc-python-sca,PyPI,urllib3,1.23,transitive,GHSA-wqvq-5m8c-6g24,CVE-2020-26137,MODERATE,1.25.9,2021-06-18,CRLF injection in urllib3
+P-06,poc-python-sca,PyPI,idna,2.7,transitive,GHSA-65pc-fj4g-8rjx,CVE-2026-45409,MODERATE,3.15,2026-05-19,Internationalized Domain Names in Applications (IDNA): Specially crafted inputs to idna.en
+P-06,poc-python-sca,PyPI,idna,2.7,transitive,GHSA-jjg7-2v4v-x38h,CVE-2024-3651,MODERATE,3.7,2024-04-11,Internationalized Domain Names in Applications (IDNA) vulnerable to denial of service from
+P-07,poc-python-sca,PyPI,pyyaml,5.3.1,direct,GHSA-8q59-q68h-6hv4,CVE-2020-14343,CRITICAL,5.4,2021-03-25,Improper Input Validation in PyYAML
+P-08,poc-python-sca,PyPI,future,0.18.2,direct,GHSA-v3c5-jqr6-7qm8,CVE-2022-40899,HIGH,0.18.3,2022-12-23,Python Charmers Future denial of service vulnerability
+P-08,poc-python-sca,PyPI,future,0.18.2,direct,GHSA-xqrq-4mgf-ff32,CVE-2025-50817,WITHDRAWN,,2025-08-14,WITHDRAWN: Withdrawn Advisory: Python-Future Module Arbitrary Code Execution via Unintended Import of
+P-09,poc-python-sca,PyPI,sqlparse,0.5.0,direct,GHSA-27jp-wm6q-gp25,,MODERATE,0.5.4,2026-02-13,sqlparse: formatting list of tuples leads to denial of service
+M-01,poc-java-sca,Maven,org.apache.logging.log4j:log4j-core,2.14.1,direct,GHSA-3pxv-7cmr-fjr4,CVE-2026-34480,MODERATE,2.25.4,2026-04-10,Apache Log4j Core: Silent log event loss in XmlLayout due to unescaped XML 1.0 forbidden c
+M-01,poc-java-sca,Maven,org.apache.logging.log4j:log4j-core,2.14.1,direct,GHSA-6hg6-v5c8-fphq,CVE-2026-34477,MODERATE,2.25.4,2026-04-10,Apache Log4j Core: `verifyHostName` attribute silently ignored in TLS configuration
+M-01,poc-java-sca,Maven,org.apache.logging.log4j:log4j-core,2.14.1,direct,GHSA-vc5p-v9hr-52mj,CVE-2025-68161,MODERATE,2.25.3,2025-12-18,Apache Log4j does not verify the TLS hostname in its Socket Appender
+M-01,poc-java-sca,Maven,org.apache.logging.log4j:log4j-core,2.14.1,direct,GHSA-8489-44mv-ggj8,CVE-2021-44832,MODERATE,2.12.4,2022-01-04,Improper Input Validation and Injection in Apache Log4j2
+M-01,poc-java-sca,Maven,org.apache.logging.log4j:log4j-core,2.14.1,direct,GHSA-7rjr-3q55-vv33,CVE-2021-45046,CRITICAL,2.12.2,2021-12-14,Incomplete fix for Apache Log4j vulnerability
+M-01,poc-java-sca,Maven,org.apache.logging.log4j:log4j-core,2.14.1,direct,GHSA-p6xc-xr62-6r2g,CVE-2021-45105,HIGH,2.12.3,2021-12-18,Apache Log4j2 vulnerable to Improper Input Validation and Uncontrolled Recursion
+M-01,poc-java-sca,Maven,org.apache.logging.log4j:log4j-core,2.14.1,direct,GHSA-jfh8-c2jp-5v3q,CVE-2021-44228,CRITICAL,2.12.2,2021-12-10,Remote code injection in Log4j
+M-02,poc-java-sca,Maven,org.apache.commons:commons-text,1.9,direct,GHSA-599f-7c49-w659,CVE-2022-42889,CRITICAL,1.10.0,2022-10-13,Arbitrary code execution in Apache Commons Text
+M-03,poc-java-sca,Maven,org.yaml:snakeyaml,1.29,transitive,GHSA-w37g-rhq8-7m4j,CVE-2022-41854,MODERATE,1.32,2022-11-11,Snakeyaml vulnerable to Stack overflow leading to denial of service
+M-03,poc-java-sca,Maven,org.yaml:snakeyaml,1.29,transitive,GHSA-3mc7-4q67-w48m,CVE-2022-25857,HIGH,1.31,2022-08-31,Uncontrolled Resource Consumption in snakeyaml
+M-03,poc-java-sca,Maven,org.yaml:snakeyaml,1.29,transitive,GHSA-c4r9-r8fh-9vj2,CVE-2022-38749,MODERATE,1.31,2022-09-06,snakeYAML before 1.31 vulnerable to Denial of Service due to Out-of-bounds Write
+M-03,poc-java-sca,Maven,org.yaml:snakeyaml,1.29,transitive,GHSA-hhhw-99gj-p3c3,CVE-2022-38750,MODERATE,1.31,2022-09-06,snakeYAML before 1.31 vulnerable to Denial of Service due to Out-of-bounds Write
+M-03,poc-java-sca,Maven,org.yaml:snakeyaml,1.29,transitive,GHSA-98wm-3w3q-mw94,CVE-2022-38751,MODERATE,1.31,2022-09-06,snakeYAML before 1.31 vulnerable to Denial of Service due to Out-of-bounds Write
+M-03,poc-java-sca,Maven,org.yaml:snakeyaml,1.29,transitive,GHSA-9w3m-gqgf-c4p9,CVE-2022-38752,MODERATE,1.32,2022-09-06,snakeYAML before 1.32 vulnerable to Denial of Service due to Out-of-bounds Write
+M-03,poc-java-sca,Maven,org.yaml:snakeyaml,1.29,transitive,GHSA-mjmj-j48q-9wg2,CVE-2022-1471,HIGH,2.0,2022-12-12,SnakeYaml Constructor Deserialization Remote Code Execution
+M-04,poc-java-sca,Maven,com.fasterxml.jackson.core:jackson-databind,2.13.2.2,transitive,GHSA-j3rv-43j4-c7qm,CVE-2026-54512,HIGH,2.18.8,2026-06-23,jackson-databind has a PolymorphicTypeValidator bypass via generic type parameters that al
+M-04,poc-java-sca,Maven,com.fasterxml.jackson.core:jackson-databind,2.13.2.2,transitive,GHSA-3wrr-7qpf-2prh,CVE-2026-50193,MODERATE,2.14.0,2026-06-23,jackson-databind: Deeply nested JsonNode throws StackOverflowError for toString()
+M-04,poc-java-sca,Maven,com.fasterxml.jackson.core:jackson-databind,2.13.2.2,transitive,GHSA-5jmj-h7xm-6q6v,CVE-2026-54515,MODERATE,,2026-06-23,jackson-databind has case-insensitive deserialization bypasses per-property @JsonIgnorePro
+M-04,poc-java-sca,Maven,com.fasterxml.jackson.core:jackson-databind,2.13.2.2,transitive,GHSA-rmj7-2vxq-3g9f,CVE-2026-54513,HIGH,2.18.8,2026-06-23,jackson-databind has an array subtype allowlist bypass in BasicPolymorphicTypeValidator (a
+M-04,poc-java-sca,Maven,com.fasterxml.jackson.core:jackson-databind,2.13.2.2,transitive,GHSA-hgj6-7826-r7m5,CVE-2026-54514,MODERATE,2.18.8,2026-06-23,jackson-databind: InetSocketAddress deserialization triggers eager DNS resolution (SSRF)
+M-04,poc-java-sca,Maven,com.fasterxml.jackson.core:jackson-databind,2.13.2.2,transitive,GHSA-rgv9-q543-rqg4,CVE-2022-42004,HIGH,2.12.7.1,2022-10-03,Uncontrolled Resource Consumption in FasterXML jackson-databind
+M-04,poc-java-sca,Maven,com.fasterxml.jackson.core:jackson-databind,2.13.2.2,transitive,GHSA-jjjh-jjxp-wpff,CVE-2022-42003,HIGH,2.12.7.1,2022-10-03,Uncontrolled Resource Consumption in Jackson-databind
+M-05,poc-java-sca,Maven,org.springframework:spring-web,5.3.18,transitive,GHSA-hgjh-9rj2-g67j,CVE-2024-22259,HIGH,5.3.33,2024-03-16,Spring Framework URL Parsing with Host Validation Vulnerability
+M-05,poc-java-sca,Maven,org.springframework:spring-web,5.3.18,transitive,GHSA-2rmj-mq67-h97g,CVE-2024-38809,MODERATE,5.3.38,2024-09-24,Spring Framework DoS via conditional HTTP request
+M-05,poc-java-sca,Maven,org.springframework:spring-web,5.3.18,transitive,GHSA-ccgv-vj62-xf9h,CVE-2024-22243,HIGH,5.3.32,2024-02-23,Spring Web vulnerable to Open Redirect or Server Side Request Forgery
+M-05,poc-java-sca,Maven,org.springframework:spring-web,5.3.18,transitive,GHSA-2wrp-6fg6-hmc5,CVE-2024-22262,HIGH,5.3.34,2024-04-16,Spring Framework URL Parsing with Host Validation
+M-05,poc-java-sca,Maven,org.springframework:spring-web,5.3.18,transitive,GHSA-4gc7-5j7h-4qph,CVE-2024-38820,MODERATE,6.1.14,2024-10-18,Spring Framework DataBinder Case Sensitive Match Exception
+M-05,poc-java-sca,Maven,org.springframework:spring-web,5.3.18,transitive,GHSA-4wrc-f8pq-fpqp,CVE-2016-1000027,CRITICAL,6.0.0,2022-05-24,Pivotal Spring Framework contains unsafe Java deserialization methods
+M-06,poc-java-sca,Maven,org.springframework.boot:spring-boot,2.6.6,transitive,GHSA-wwpq-f5c3-7hvx,CVE-2026-40973,HIGH,3.5.14,2026-04-28,Spring Boot accepts predictable temp directory without ownership verification
+M-06,poc-java-sca,Maven,org.springframework.boot:spring-boot,2.6.6,transitive,GHSA-rc42-6c7j-7h5r,CVE-2025-22235,HIGH,3.3.11,2025-04-28,Spring Boot EndpointRequest.to() creates wrong matcher if actuator endpoint is not exposed
+M-07,poc-java-sca,Maven,org.springframework.boot:spring-boot-autoconfigure,2.6.6,transitive,GHSA-xf96-w227-r7c4,CVE-2023-20883,HIGH,2.5.15,2023-05-26,Spring Boot Welcome Page Denial of Service
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-fccv-jmmp-qg76,CVE-2023-46589,HIGH,10.1.16,2023-11-28,Apache Tomcat Improper Input Validation vulnerability
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-q3mw-pvr8-9ggc,CVE-2023-41080,MODERATE,10.1.13,2023-08-25,Apache Tomcat Open Redirect vulnerability
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-hfrx-6qgj-fp6c,CVE-2023-24998,HIGH,10.1.5,2023-02-20,Apache Commons FileUpload denial of service vulnerability
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-r6j3-px5g-cq3x,CVE-2023-45648,MODERATE,10.1.14,2023-10-10,Apache Tomcat Improper Input Validation vulnerability
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-g8pj-r55q-5c2v,CVE-2023-42795,MODERATE,10.1.14,2023-10-10,Apache Tomcat Incomplete Cleanup vulnerability
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-qppj-fm5r-hxr3,CVE-2023-44487,MODERATE,10.1.14,2023-10-10,HTTP/2 Stream Cancellation Attack
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-rq2w-37h9-vg94,CVE-2022-45143,HIGH,10.1.2,2023-01-03,Apache Tomcat improperly escapes input from JsonErrorReportValve
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-5m62-pw8w-7w9f,CVE-2026-43515,CRITICAL,10.1.55,2026-05-12,Apache Tomcat - Security constraints not correctly applied
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-r29c-68gh-xp6x,CVE-2026-41293,CRITICAL,10.1.55,2026-05-12,Apache Tomcat - HTTP/2 request headers not validated
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-gx5v-xp9w-j4cg,CVE-2026-41284,HIGH,10.1.55,2026-05-12,Apache Tomcat: Unbounded read in WebDAV LOCK and  PROPFIND handling
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-fv25-8xcx-gqjc,CVE-2026-42498,HIGH,10.1.55,2026-05-12,Apache Tomcat - WebSocket authentication header exposure
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-9m89-8frq-c98c,CVE-2026-43514,LOW,10.1.55,2026-05-12,Apache Tomcat - AJP secret compared in non-constant time
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-h6fc-48rj-7qqh,CVE-2026-43512,CRITICAL,10.1.55,2026-05-12,Apache Tomcat - Digest authenticator will authenticate any unknown user
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-5mp6-jrq3-r938,CVE-2026-43513,HIGH,10.1.55,2026-05-12,Apache Tomcat: LockOutRealm treats user names as case-sensitive
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-fpj8-gq4v-p354,CVE-2025-66614,MODERATE,10.1.50,2026-02-17,Apache Tomcat - Client certificate verification bypass
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-563x-q5rq-57qp,CVE-2026-24880,HIGH,10.1.52,2026-04-09,Apache Tomcat has an HTTP Request/Response Smuggling vulnerability
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-rv64-5gf8-9qq8,CVE-2026-34483,HIGH,10.1.54,2026-04-09,Apache Tomcat has an Improper Encoding or Escaping of Output vulnerability in the JsonAcce
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-9m3c-qcxr-9x87,CVE-2026-25854,MODERATE,10.1.53,2026-04-09,Apache Tomcat has an Open Redirect vulnerability
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-7w75-32cg-r6g2,CVE-2024-24549,MODERATE,10.1.19,2024-03-13,Apache Tomcat Denial of Service due to improper input validation vulnerability for HTTP/2 
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-7jqf-v358-p8g7,CVE-2024-38286,HIGH,10.1.25,2024-11-07,Apache Tomcat Allocation of Resources Without Limits or Throttling vulnerability
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-wm9w-rjj3-j356,CVE-2024-34750,HIGH,10.1.25,2024-07-03,Apache Tomcat - Denial of Service
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-27hp-xhwr-wr2m,CVE-2024-56337,HIGH,10.1.34,2024-12-20,Apache Tomcat Time-of-check Time-of-use (TOCTOU) Race Condition vulnerability
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-5j33-cvvr-w245,CVE-2024-50379,HIGH,10.1.34,2024-12-17,Apache Tomcat Time-of-check Time-of-use (TOCTOU) Race Condition vulnerability
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-83qj-6fr2-vhqg,CVE-2025-24813,CRITICAL,10.1.35,2025-03-10,Apache Tomcat: Potential RCE and/or information disclosure and/or information corruption w
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-23hv-mwm6-g8jf,CVE-2025-55668,MODERATE,10.1.42,2025-08-13,Apache Tomcat Session Fixation vulnerability
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-gqp3-2cvr-x8m3,CVE-2025-48989,HIGH,10.1.44,2025-08-13,Apache Tomcat Improper Resource Shutdown or Release vulnerability
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-4j3c-42xv-3f84,CVE-2025-52434,MODERATE,9.0.107,2025-07-10,Apache Tomcat is vulnerable to resource exhaustion when using the APR/Native connector
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-wr62-c79q-cv37,CVE-2025-52520,HIGH,10.1.43,2025-07-10,Apache Tomcat Catalina is vulnerable to DoS attack through bypassing of size limits
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-25xr-qj8w-c4vf,CVE-2025-53506,HIGH,10.1.43,2025-07-10,Apache Tomcat Coyote vulnerable to Denial of Service via excessive HTTP/2 streams
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-h2fw-rfh5-95r3,CVE-2025-46701,LOW,10.1.41,2025-05-29,Apache Tomcat - CGI security constraint bypass
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-hgrr-935x-pq79,CVE-2025-61795,LOW,10.1.47,2025-10-27,Apache Tomcat Vulnerable to Improper Resource Shutdown or Release
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-wmwf-9ccg-fff5,CVE-2025-55752,HIGH,10.1.45,2025-10-27,Apache Tomcat Vulnerable to Relative Path Traversal
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-vfww-5hm6-hx2j,CVE-2025-55754,LOW,10.1.45,2025-10-27,"Apache Tomcat Vulnerable to Improper Neutralization of Escape, Meta, or Control Sequences"
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-wc4r-xq3c-5cf3,CVE-2025-49125,MODERATE,10.1.42,2025-06-16,Apache Tomcat - Security constraint bypass for pre/post-resources
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-h3gc-qfqq-6h8f,CVE-2025-48988,HIGH,10.1.42,2025-06-16,Apache Tomcat - DoS in multipart upload
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-42wg-hm62-jcwg,CVE-2025-49124,MODERATE,10.1.42,2025-06-16,Apache Tomcat installer for Windows has an untrusted search path vulnerability
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,GHSA-p22x-g9px-3945,CVE-2022-42252,HIGH,10.0.27,2022-11-01,Apache Tomcat may reject request containing invalid Content-Length header
+M-09,poc-java-sca,Maven,commons-fileupload:commons-fileupload,1.3.2,direct,GHSA-hfrx-6qgj-fp6c,CVE-2023-24998,HIGH,1.5,2023-02-20,Apache Commons FileUpload denial of service vulnerability
+M-09,poc-java-sca,Maven,commons-fileupload:commons-fileupload,1.3.2,direct,GHSA-7x9j-7223-rg5m,CVE-2016-1000031,CRITICAL,1.3.3,2018-12-21,Improper Access Control in commons-fileupload
+M-09,poc-java-sca,Maven,commons-fileupload:commons-fileupload,1.3.2,direct,GHSA-vv7r-c36w-3prj,CVE-2025-48976,HIGH,1.6.0,2025-06-16,"Apache Commons FileUpload, Apache Commons FileUpload: FileUpload DoS via part headers"

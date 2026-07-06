@@ -1,0 +1,49 @@
+probe_id,repo,ecosystem,package,version,relation,chain,reachability,probe_class,tags,live_advisories,withdrawn_advisories,max_severity,fix_clears_all,notes
+N-01,poc-node-sca,npm,lodash,4.17.11,direct,,called,tp-direct,stale-lock,7,0,CRITICAL,4.18.0,package.json range ^4.17.11 admits patched releases; package-lock.json pins 4.17.11. Lockfile-aware tools must report; manifest-only resolution may miss.
+N-02,poc-node-sca,npm,minimist,0.0.8,transitive,mkdirp > minimist,n/a,tp-transitive,dedup-multiversion,2,1,CRITICAL,0.2.4,Depth 2. Root also declares minimist 1.2.8; correct output separates the two versions.
+N-03,poc-node-sca,npm,qs,6.7.0,transitive,express > qs; express > body-parser > qs,n/a,tp-transitive,dedup-multipath;dedup-multiversion,3,0,HIGH,6.14.2,Installed at two paths. Canonical counting: one tuple regardless of path count. Root also declares qs 6.11.0.
+N-04,poc-node-sca,npm,express,4.17.1,direct,,called,tp-direct,withdrawn-present,2,1,MODERATE,4.20.0,One withdrawn advisory also matches this version; findings on withdrawn advisories are excluded from scoring.
+N-05,poc-node-sca,npm,body-parser,1.19.0,transitive,express > body-parser,n/a,tp-transitive,,1,0,HIGH,1.20.3,
+N-06,poc-node-sca,npm,cookie,0.4.0,transitive,express > cookie,n/a,tp-transitive,,1,0,LOW,0.7.0,
+N-07,poc-node-sca,npm,path-to-regexp,0.1.7,transitive,express > path-to-regexp,n/a,tp-transitive,,3,0,HIGH,0.1.13,
+N-08,poc-node-sca,npm,send,0.17.1,transitive,express > send,n/a,tp-transitive,,1,0,LOW,0.19.0,
+N-09,poc-node-sca,npm,serve-static,1.14.1,transitive,express > serve-static,n/a,tp-transitive,,1,0,LOW,1.16.0,
+N-10,poc-node-sca,npm,ejs,3.1.6,direct,,imported-only,tp-direct,reachability-tier,2,0,CRITICAL,3.1.10,Module is required; render APIs are never invoked. Reachability-capable tools should mark low exploitability.
+N-11,poc-node-sca,npm,handlebars,4.7.6,direct,,declared-only,tp-direct,reachability-tier,10,0,CRITICAL,4.7.9,Declared in package.json; no source file imports it.
+N-12,poc-node-sca,npm,node-fetch,2.7.0,direct,,called,manifest-floor,,0,0,,,Manifest range ^2.6.0 has a floor with known advisories; lockfile resolves 2.7.0 which is clean. Correct result: no finding. A finding here indicates manifest-floor evaluation.
+N-13,poc-node-sca,npm,qs,6.11.0,direct,,called,tp-direct,reclassified,2,0,MODERATE,6.14.2,Selected as a post-fix version of CVE-2022-24999; advisories published after selection now match 6.11.0. Register follows the snapshot.
+N-14,poc-node-sca,npm,minimist,1.2.8,direct,,called,expected-clean,dedup-multiversion,0,0,,,Verified zero advisories at snapshot.
+N-15,poc-node-sca,npm,mkdirp,0.5.1,direct,,called,expected-clean,carrier,0,0,,,Carrier for N-02. Verified zero advisories at snapshot.
+N-16,poc-node-sca,npm,dompurify,3.4.11,direct,,imported-only,expected-clean,license-dual,0,0,,,License: (MPL-2.0 OR Apache-2.0).
+N-17,poc-node-sca,npm,jsonify,0.0.1,direct,,called,expected-clean,license-unknown,0,0,,,Declared license: Public Domain. Exercises unrecognized-license handling.
+N-18,poc-node-sca,npm,mariadb,3.5.3,direct,,imported-only,expected-clean,license-lgpl,0,0,,,License: LGPL-2.1-or-later.
+P-01,poc-python-sca,PyPI,requests,2.19.1,direct,,called,tp-direct,,5,0,HIGH,2.33.0,
+P-02,poc-python-sca,PyPI,flask,0.12.2,direct,,called,tp-direct,,4,0,HIGH,3.1.3,
+P-03,poc-python-sca,PyPI,jinja2,2.10,transitive,flask > jinja2,n/a,tp-transitive,,6,0,HIGH,3.1.6,
+P-04,poc-python-sca,PyPI,werkzeug,0.14.1,transitive,flask > werkzeug,n/a,tp-transitive,,9,0,HIGH,3.1.6,
+P-05,poc-python-sca,PyPI,urllib3,1.23,transitive,requests > urllib3,n/a,tp-transitive,volume,11,0,HIGH,2.7.0,Highest advisory count in the Python set; exercises grouping and pagination in vendor UIs.
+P-06,poc-python-sca,PyPI,idna,2.7,transitive,requests > idna,n/a,tp-transitive,,2,0,MODERATE,3.15,
+P-07,poc-python-sca,PyPI,pyyaml,5.3.1,direct,,imported-only,tp-direct,reachability-tier,1,0,CRITICAL,5.4,Only yaml.safe_load appears in source. The advisory concerns unsafe loader paths that are never called.
+P-08,poc-python-sca,PyPI,future,0.18.2,direct,,declared-only,tp-direct,reachability-tier;withdrawn-present,1,1,HIGH,0.18.3,Pinned in both manifests; never imported.
+P-09,poc-python-sca,PyPI,sqlparse,0.5.0,direct,,called,tp-direct,reclassified,1,0,MODERATE,0.5.4,Selected as a post-fix version of CVE-2024-4340; a later advisory now matches 0.5.0. Register follows the snapshot.
+P-10,poc-python-sca,PyPI,certifi,2024.7.4,transitive,requests > certifi,n/a,expected-clean,,0,0,,,Post-fix version of CVE-2024-39689. Verified zero advisories at snapshot.
+P-11,poc-python-sca,PyPI,chardet,3.0.4,transitive,requests > chardet,n/a,expected-clean,license-lgpl,0,0,,,License: LGPL. Copyleft entry arriving transitively.
+P-12,poc-python-sca,PyPI,pymupdf,1.24.9,direct,,imported-only,expected-clean,license-agpl,0,0,,,License: AGPL-3.0. Primary copyleft policy entry for Python.
+P-13,poc-python-sca,PyPI,pymupdfb,1.24.9,transitive,pymupdf > pymupdfb,n/a,expected-clean,license-agpl,0,0,,,
+P-14,poc-python-sca,PyPI,packaging,24.1,direct,,called,expected-clean,license-dual,0,0,,,License: (Apache-2.0 OR BSD-2-Clause).
+P-15,poc-python-sca,PyPI,markupsafe,1.1.1,transitive,flask > jinja2 > markupsafe,n/a,expected-clean,,0,0,,,Depth 3 clean entry.
+P-16,poc-python-sca,PyPI,click,6.7,transitive,flask > click,n/a,expected-clean,,0,0,,,
+P-17,poc-python-sca,PyPI,itsdangerous,0.24,transitive,flask > itsdangerous,n/a,expected-clean,license-unknown,0,0,,,PyPI metadata declares license UNKNOWN.
+M-01,poc-java-sca,Maven,org.apache.logging.log4j:log4j-core,2.14.1,direct,,called,tp-direct,remediation-quality,7,0,CRITICAL,2.25.4,"Advisory chain spans four fix boundaries; remediation suggestions are scored on reaching the version that clears all live advisories, not only CVE-2021-44228."
+M-02,poc-java-sca,Maven,org.apache.commons:commons-text,1.9,direct,,called,tp-direct,,1,0,CRITICAL,1.10.0,
+M-03,poc-java-sca,Maven,org.yaml:snakeyaml,1.29,transitive,spring-boot-starter-web > spring-boot-starter > snakeyaml,n/a,tp-transitive,pending-resolve,7,0,HIGH,2.0,Expected from the Spring Boot 2.6.6 BOM. Confirm version with: mvn dependency:tree -Dincludes=org.yaml:snakeyaml
+M-04,poc-java-sca,Maven,com.fasterxml.jackson.core:jackson-databind,2.13.2.2,transitive,spring-boot-starter-web > spring-boot-starter-json > jackson-databind,called,tp-transitive,pending-resolve;reachability-tier,7,0,HIGH,2.18.8,Depth 3. Source imports and calls ObjectMapper without enabling default typing. Confirm version with: mvn dependency:tree -Dincludes=com.fasterxml.jackson.core:jackson-databind
+M-05,poc-java-sca,Maven,org.springframework:spring-web,5.3.18,transitive,spring-boot-starter-web > spring-web,n/a,tp-transitive,pending-resolve;disputed,6,0,CRITICAL,6.1.14,"Matching set includes CVE-2016-1000027, which Spring disputes as usage-dependent. Record each tool's disposition; suppression with rationale and a flag are both acceptable, silence is not."
+M-06,poc-java-sca,Maven,org.springframework.boot:spring-boot,2.6.6,transitive,spring-boot-starter-web > spring-boot,n/a,tp-transitive,pending-resolve,2,0,HIGH,3.5.14,
+M-07,poc-java-sca,Maven,org.springframework.boot:spring-boot-autoconfigure,2.6.6,transitive,spring-boot-starter-web > spring-boot-autoconfigure,n/a,tp-transitive,pending-resolve,1,0,HIGH,2.5.15,
+M-08,poc-java-sca,Maven,org.apache.tomcat.embed:tomcat-embed-core,9.0.60,transitive,spring-boot-starter-web > spring-boot-starter-tomcat > tomcat-embed-core,n/a,organic-volume,pending-resolve;volume,37,0,CRITICAL,10.1.55,"Thirty-seven live advisories at snapshot. Scored on canonical-tuple counting and grouping behavior, not enumerated per advisory."
+M-09,poc-java-sca,Maven,commons-fileupload:commons-fileupload,1.3.2,direct,,declared-only,tp-direct,reachability-tier,3,0,CRITICAL,1.6.0,Declared in pom.xml; no source file imports it.
+M-10,poc-java-sca,Maven,com.google.guava:guava,32.1.3-jre,direct,,declared-only,expected-clean,,0,0,,,Post-fix version of CVE-2023-2976. Verified zero advisories at snapshot.
+M-11,poc-java-sca,Maven,com.mysql:mysql-connector-j,8.2.0,direct,,declared-only,expected-clean,license-gpl-exception,0,0,,,Post-fix version of CVE-2023-22102. License: GPL-2.0 with FOSS exception; primary GPL policy entry for Java.
+M-12,poc-java-sca,Maven,com.itextpdf:itextpdf,5.5.13.3,direct,,declared-only,expected-clean,license-agpl,0,0,,,License: AGPL-3.0. Verified zero advisories at snapshot.
+M-13,poc-java-sca,Maven,org.springframework.boot:spring-boot-starter-web,2.6.6,direct,,declared-only,expected-clean,carrier,0,0,,,Carrier for the Maven transitive set. Zero advisories attach to the starter artifact itself.
